@@ -157,6 +157,8 @@ const productos =[
         });
     }
 
+    const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+    
     const productosEnCarrito = [];
 
 
