@@ -158,7 +158,7 @@ const productos =[
     }
 
     const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
-    
+
     const productosEnCarrito = [];
 
 
@@ -176,7 +176,7 @@ const productos =[
 
         actualizarNumerito();
 
-        localStorage.setItem("prudctos-en-carrito", JSON.stringify(productosEnCarrito));
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     }
 
 
