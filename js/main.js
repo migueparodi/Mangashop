@@ -1,100 +1,11 @@
-const productos =[
-    //Akira
-    {
-        id: "akira-01",
-        titulo: "Akira 01",
-        imagen: "./img/akira/01.jpg",
-        categoria: {
-            nombre: "Akira",
-            id: "akira"
-        },
-        precio: 1000
-    },
-    {
-        id: "akira-02",
-        titulo: "Akira 02",
-        imagen: "./img/akira/02.jpg",
-        categoria: {
-            nombre: "Akira",
-            id: "akira"
-        },
-        precio: 1000
-    },
-    {
-        id: "akira-03",
-        titulo: "Akira 03",
-        imagen: "./img/akira/03.jpg",
-        categoria: {
-            nombre: "Akira",
-            id: "akira"
-        },
-        precio: 1000
-    },
-    
-    //Berserk
-    {
-        id: "berserk-01",
-        titulo: "Berserk 01",
-        imagen: "./img/berserk/01.jpg",
-        categoria: {
-            nombre: "Berserk",
-            id: "berserk"
-        },
-        precio: 1000
-    },
-    {
-        id: "berserk-02",
-        titulo: "Berserk 02",
-        imagen: "./img/berserk/02.jpg",
-        categoria: {
-            nombre: "Berserk",
-            id: "berserk"
-        },
-        precio: 1000
-    },
-    {
-        id: "berserk-03",
-        titulo: "Berserk 03",
-        imagen: "./img/berserk/03.jpg",
-        categoria: {
-            nombre: "Berserk",
-            id: "berserk"
-        },
-        precio: 1000
-    },
-    
-    //blame
-    {
-        id: "blame-01",
-        titulo: "Blame 01",
-        imagen: "./img/blame/01.jpg",
-        categoria: {
-            nombre: "Blame",
-            id: "blame"
-        },
-        precio: 1000
-    },
-    {
-        id: "blame-02",
-        titulo: "Blame 02",
-        imagen: "./img/blame/02.jpg",
-        categoria: {
-            nombre: "Blame",
-            id: "blame"
-        },
-        precio: 1000
-    },
-    {
-        id: "blame-03",
-        titulo: "Blame 03",
-        imagen: "./img/blame/03.jpg",
-        categoria: {
-            nombre: "Blame",
-            id: "blame"
-        },
-        precio: 1000
-    }
-    ];
+let productos = [];
+
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
 
 
 
@@ -125,7 +36,7 @@ const productos =[
         actualizarBotonesAgregar();
     }
 
-    cargarProductos(productos);
+    
 
 
     botonesCategorias.forEach(boton => {
@@ -172,6 +83,21 @@ const productos =[
 
 
     function agregarAlCarrito(e) {
+
+        Toastify({
+            text: "Se agrego su producto :D",
+            duration: 3000,
+            close: false,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #212846, #665f5f)",
+              borderRadius: '2rem',
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+
         const idBoton = e.currentTarget.id;
         const productoAgregado = productos.find(producto => producto.id === idBoton);
 

@@ -1,0 +1,97 @@
+[
+
+    {
+        "id": "akira-01",
+        "titulo": "Akira 01",
+        "imagen": "./img/akira/01.jpg",
+        "categoria": {
+            "nombre": "Akira",
+            "id": "akira"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "akira-02",
+        "titulo": "Akira 02",
+        "imagen": "./img/akira/02.jpg",
+        "categoria": {
+            "nombre": "Akira",
+            "id": "akira"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "akira-03",
+        "titulo": "Akira 03",
+        "imagen": "./img/akira/03.jpg",
+        "categoria": {
+            "nombre": "Akira",
+            "id": "akira"
+        },
+        "precio": 1000
+    },
+    
+
+    {
+        "id": "berserk-01",
+        "titulo": "Berserk 01",
+        "imagen": "./img/berserk/01.jpg",
+        "categoria": {
+            "nombre": "Berserk",
+            "id": "berserk"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "berserk-02",
+        "titulo": "Berserk 02",
+        "imagen": "./img/berserk/02.jpg",
+        "categoria": {
+            "nombre": "Berserk",
+            "id": "berserk"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "berserk-03",
+        "titulo": "Berserk 03",
+        "imagen": "./img/berserk/03.jpg",
+        "categoria": {
+            "nombre": "Berserk",
+            "id": "berserk"
+        },
+        "precio": 1000
+    },
+    
+
+    {
+        "id": "blame-01",
+        "titulo": "Blame 01",
+        "imagen": "./img/blame/01.jpg",
+        "categoria": {
+            "nombre": "Blame",
+            "id": "blame"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "blame-02",
+        "titulo": "Blame 02",
+        "imagen": "./img/blame/02.jpg",
+        "categoria": {
+            "nombre": "Blame",
+            "id": "blame"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "blame-03",
+        "titulo": "Blame 03",
+        "imagen": "./img/blame/03.jpg",
+        "categoria": {
+            "nombre": "Blame",
+            "id": "blame"
+        },
+        "precio": 1000
+    }
+]
