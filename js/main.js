@@ -157,9 +157,18 @@ const productos =[
         });
     }
 
-    const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+    let productosEnCarrito;
 
-    const productosEnCarrito = [];
+    let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+    if (productosEnCarritoLS) {
+        productosEnCarrito = JSON.parse(productosEnCarritoLS);
+        actualizarNumerito();
+    } else {
+        productosEnCarrito = [];
+    }
+
+    //const productosEnCarrito = [];
 
 
     function agregarAlCarrito(e) {
